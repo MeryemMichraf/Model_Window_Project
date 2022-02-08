@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meryem Michraf - activity 7</title>
+    <link rel="stylesheet" href="modal.css" type="text/css">
+
+</head>
+<body>
+   
+        <fieldset>
+            <h1 class="title"> Model window</h1>
+            <a href="#openModal" class="link"> Click here</a>
+            <div class="modalwindow" id="openModal">
+                <section class="content">
+                    <a class="close" href="#">&#10005;</a>
+                    <section class="info">
+                        <img src="bw.jpg" alt="pink watermellon lotion">
+                        <div class="p">
+                            pink watermellon<br><i>Super smooth body lotion</i>
+                            <hr>
+                            A sweet summer blend of juicy watermellon,  pink petals and dewy aloe in our nutrient rich, non greasy lotion.
+                            <hr>
+                            <span> $13.50</span><b> now $3.24</b>
+                            </b> 
+                                                <form  action="checkout.html" method="get">
+                                                    <input type="Submit"  text-align="center" value="Add to Bag" onclick="passvalues();" /> 
+                                                </form>
+                     
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </fieldset>
+
+    
+    <script>
+        function passvalues() {
+            let n = ' $3.24';
+            let x = 'pink watermellon';
+            localStorage.setItem('price', n);
+            localStorage.setItem('product', x);
+        }
+    </script>
+   
+
+
+</body>
+</html>
