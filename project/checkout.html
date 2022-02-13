@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Checkout</title>
+</head>
+<body>
+    <h2> Added to cart</h2>
+    <br>
+    <span id="display"></span>
+   <script>
+        let d = document.querySelector('#display');
+       d.innerHTML = localStorage.getItem('product');
+          + localStorage.getItem('price');
+
+      
+    </script>
+
+    
+
+
+
+
+</body>
+</html>
